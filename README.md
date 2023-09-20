@@ -10,7 +10,9 @@ Repository for storing code for my MS in Data Science course CS668 Capstone Proj
 
 ## Important Links
 - [Link to class Google Slides](https://docs.google.com/presentation/d/1APpuMtGtO8vT9he0K5p3R4R16LnRPlKKZkPxcpIfb3Y/edit?usp=sharing)
-
+- [Link to progress document](https://docs.google.com/presentation/d/1APpuMtGtO8vT9he0K5p3R4R16LnRPlKKZkPxcpIfb3Y/edit?usp=sharing)
+- [Link to project proposal](https://docs.google.com/presentation/d/1SxkY7UzO3wcA3xyFD9Zda812X8YGjOuhNamX-klG0rg/edit?usp=sharing)
+  
 ([back to top](#table-of-contents))
 
 ## Research Question
