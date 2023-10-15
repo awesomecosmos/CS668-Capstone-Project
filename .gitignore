@@ -163,3 +163,4 @@ Capstone-Project.Rproj
 .gitignore
 code/.Rapp.history
 data/*
+img/eda/*
