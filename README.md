@@ -16,7 +16,7 @@ Repository for storing code for my MS in Data Science course CS668 Capstone Proj
 - [Bibliography](#bibliography)
 
 ## Important Links
-- [Link to research poster](https://docs.google.com/spreadsheets/d/1oHmrpW2VqZPuhs3KfzjCWYPrM9RZhGllY99PErwfoEA/edit#gid=6770168)
+- [Link to research poster](https://github.com/awesomecosmos/CS668-Capstone-Project/blob/main/materials/cs668_poster_final.pdf)
   
 ([back to top](#table-of-contents))
 
@@ -34,6 +34,9 @@ Can we predict the employment sector (academia vs. industry) of Ph.D. degree hol
 ([back to top](#table-of-contents))
 
 ## Literature Review
+
+(see [Bibliography](#bibliography))
+
 - Most studies in the field use frameworks and statistical models to explain job satisfaction (Dorenkamp & Weiß, 2017), intention to leave the higher education sector (Dorenkamp & Weiß, 2017, Szromek & Wolniak, 2020), turnover rates (White-Lewis et al., 2022, Xu, 2008), etc.
 - Very few studies use machine learning techniques to predict attributes that cause turnover (Birzniece et al., 2022).
 - Another study (Makridis, 2021) that used the IPUMS Higher Ed dataset also used statistical models to perform their analysis.
@@ -46,7 +49,7 @@ Can we predict the employment sector (academia vs. industry) of Ph.D. degree hol
 
 [IPUMS Higher Education](https://highered.ipums.org/highered/index.shtml) is a longitudinal survey dataset covering the U.S. STEM workforce from 2003 to 2013, comprising 531,216 rows and 126 columns. 
 
-We wrote a script to create a data dictionary for the coded feature names and values. 
+We wrote a [script](https://github.com/awesomecosmos/CS668-Capstone-Project/blob/main/code/create_data_dict.py) to create a data dictionary for the coded feature names and values. 
 
 We filtered the dataset to only include respondents who have earned Ph.D. degrees, who were full-time employed, and who work in either academia (defined as a 4-year college/medical institution), or industry. 
 
@@ -56,7 +59,7 @@ We performed an extensive investigation into the features and their correlations
 
 ## Methodology
 
-Given the original dataset size (531,216 x 126), we performed extensive exploratory data analysis (EDA) to understand the data. We checked for null and missing values, checked the correlations of the features, and ensured the data was numerical. From this EDA, we identified the relevant features for answering the research question and filtered the data accordingly (MRDG = 3, EMSEC = (2,4), LFSTAT = 1, WRKG = 1). 
+Given the original dataset size (531,216 x 126), we performed [extensive exploratory data analysis (EDA)](https://github.com/awesomecosmos/CS668-Capstone-Project/blob/main/code/exploratory_data_analysis.ipynb) to understand the data. We checked for null and missing values, checked the correlations of the features, and ensured the data was numerical. From this EDA, we identified the relevant features for answering the research question and filtered the data accordingly (MRDG = 3, EMSEC = (2,4), LFSTAT = 1, WRKG = 1). 
 
 We then examined each of the 126 variables by year and employer sector, and using statistical correlations and domain knowledge, discarded 103 features for a final dataset size of (119153 x 23). 
 
@@ -65,7 +68,7 @@ We then examined each of the 126 variables by year and employer sector, and usin
 (caption) An example of the EDA process. Each feature, in this case NMRMEMG (field of major), was visualized by year and employment sector, to investigate any trends, and to determine whether to discard the feature. Downsampling was necessary due to the high dimensionality of the dataset.
 
 
-We split our dataset 80% train and 20% test, and identified 7 binary classification algorithms to classify our dataset using our target variable EMSEC, and its value (academia = 0, industry = 1), namely: 
+We [split our dataset 80% train and 20% test](https://github.com/awesomecosmos/CS668-Capstone-Project/blob/main/code/machine_learning.ipynb), and identified 7 binary classification algorithms to classify our dataset using our target variable EMSEC, and its value (academia = 0, industry = 1), namely: 
 
 - Decision Tree
 - XGBoost
