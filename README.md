@@ -6,11 +6,17 @@ Repository for storing code for my MS in Data Science course CS668 Capstone Proj
 
 ## Table of Contents
 - [Important Links](#important-links)
-- [Research Question](research-question)
+- [Abstract](#abstract)
+- [Research Question](#research-question)
+- [Literature Review](#literature-review)
+- [Dataset](#dataset)
+- [Methodology](#methodology)
+- [Results](#results)
+- [Conclusion and Future Work](#conclusion-and-future-work)
+- [Bibliography](#bibliography)
 
 ## Important Links
-- [Link to class Google Sheets](https://docs.google.com/spreadsheets/d/1oHmrpW2VqZPuhs3KfzjCWYPrM9RZhGllY99PErwfoEA/edit#gid=6770168)
-- [Link to progress document](https://docs.google.com/presentation/d/1SxkY7UzO3wcA3xyFD9Zda812X8YGjOuhNamX-klG0rg/edit?usp=sharing)
+- [Link to research poster](https://docs.google.com/spreadsheets/d/1oHmrpW2VqZPuhs3KfzjCWYPrM9RZhGllY99PErwfoEA/edit#gid=6770168)
   
 ([back to top](#table-of-contents))
 
